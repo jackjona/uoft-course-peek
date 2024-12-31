@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "UofT Course Peek",
+  "version": "1.0",
+  "description": "Instantly view course details like title, description, and prerequisites when hovering over course codes on the University of Toronto academic calendar website.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://artsci.calendar.utoronto.ca/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://artsci.calendar.utoronto.ca/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
