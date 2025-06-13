@@ -46,7 +46,8 @@
         const hours = doc.querySelector('div.field--name-field-hours .field__item')?.innerText || 'N/A';
         const descriptionElements = doc.querySelectorAll('div.node__content div.field--name-body.field--type-text-with-summary p');
         const description = Array.from(descriptionElements).map(p => p.innerText).join('<br><br>') || 'N/A';
-        const prerequisites = doc.querySelector('div.field--name-field-prerequisites .field__item')?.innerText || 'N/A';
+        const prerequisites = doc.querySelector('div.field--name-field-prerequisite .field__item')?.innerText || 'N/A';
+        const corequisites = doc.querySelector('div.field--name-field-corequisite .field__item')?.innerText || 'N/A';
         const requirement = doc.querySelector('div.field--name-field-breadth-requirements .field__item')?.innerText || 'N/A';
 
         // Displayed content
@@ -55,6 +56,7 @@
             <strong>Hours:</strong> ${hours}<br>
             <strong>Description:</strong> ${description}<br>
             <strong>Prerequisites:</strong> ${prerequisites}<br>
+            <strong>Corequisites:</strong> ${corequisites}<br>
             <strong>Requirement (Breadth):</strong> ${requirement}
         `;
     }
