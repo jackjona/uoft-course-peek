@@ -2,6 +2,8 @@
 
 **UofT Course Peek** is a browser extension that instantly displays course details like title, description, and prerequisites when hovering over course codes on the University of Toronto academic calendar website.
 
+This is also available as a userscript here: [https://gist.github.com/jackjona/bbdce489534ec873b0738cca10100fc2](https://gist.github.com/jackjona/bbdce489534ec873b0738cca10100fc2)
+
 ## Screenshot:
 <img width="1294" alt="UofT Course Peek popup shown when hovering over a course code" src="https://github.com/user-attachments/assets/6a3e3b3c-a454-43c5-ab4d-1abdf5c7bed1" />
 
